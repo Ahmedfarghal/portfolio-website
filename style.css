@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  height: auto;
+  margin-bottom: 1vw;
+  margin-top: 1.50vw;
+}
+
+body {
+        background-color: #fdfcfa;
+      }
+
+
+/*------Header-------------------------------------*/
+.name-Title {
+            font-size: 4vw;
+            font-family: Comfortaa;
+            text-transform: uppercase;
+            text-align: right;
+            margin-right: 3vw;
+            line-height: 1vw;
+}
+
+.about-Title {
+            font-size: 3vw;
+            font-family: Comfortaa;
+            color: #bc1142;
+            text-transform: uppercase;
+            text-align: right;
+            margin-right: 3vw;
+            line-height: 3vw;
+}
+
+@media screen and (max-width: 550px)
+{.name-Title, .about-Title{
+  font-size: 5vw;
+  line-height: 4vw;
+  }}
+
+/*------header Logo------*/
+.headerLogo {
+            background-image: url(img/Raspberry_Pi_Logo.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            display: block;
+            width: 7vw;
+            height: 7vw;
+            margin-left: 10vw;
+            margin-top: -7.50vw;
+        }
+
+/*------header separator------*/
+hr {
+          margin-left: 10vw;
+}
+
+/*------body image------*/
+.bodyImage-Screen {
+            background-size: cover;
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 100%;
+            height: 40vw;
+            border-radius: 10px;
+            box-shadow: -2px 9px 78px -8px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 550px)
+{.wideScreen{
+  width: 100%;
+  align-items: center;
+  }}
+
+/*------featuredWork-----------------------------*/
+          /*featuredWorkText*/
+.featuredWork-Text {
+            font-size: 3vw;
+            padding: 2vw;
+            line-height: 2vw;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000;
+}
+        /*featuredWork-Images*/
+#featuredWork-Images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+}
+          /*logo-images*/
+#featuredWork-Images > figure > img {
+      width: 20vw;
+      height: 20vw;
+      object-fit:  cover;
+
+}
+
+#featuredWork-Images > img {
+    flex: 1 1 100px;
+
+}
+
+/*figcaption = textUnderImages*/
+figcaption {
+  text-align: center;
+  font-size: 2em;
+  line-height: 0.50vw;
+}
+
+
+
+
+
+/*----------------------Footer----------*/
+.footer {
+          display: inline;
+          padding: 10px;
+          text-align: center;
+}
+
+.footer-Image {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 10px;
+}
+.f-Image {
+          padding: 10px;
+          width: 50px;
+          height: 50px;
+}
+
+.p-Footer {
+          font-size: 2em;
+          text-align: center;
+          font-family: Comfortaa;
+          color: #bc1142;
+}
+
+.span-Footer {
+          text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 1500px)
+{#featuredWork-Images > figure > img {
+      width: 400px;
+      height: 400px;
+      {
+
+  }}
+
+@media screen and (max-width: 1000px)
+    {#featuredWork-Images > figure > img {
+        width: 200px;
+        height: 200px;
+        {
+
+}}
